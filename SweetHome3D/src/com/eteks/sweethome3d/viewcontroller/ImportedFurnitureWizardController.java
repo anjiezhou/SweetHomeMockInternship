@@ -546,6 +546,13 @@ public class ImportedFurnitureWizardController extends WizardController
   }
 
   /**
+   * Returns the volume.
+   */
+  public float getVolume() {
+    return getDepth() * getHeight() * getWidth();
+  }
+
+  /**
    * Returns the elevation of the imported piece.
    */
   public float getElevation() {
