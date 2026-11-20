@@ -522,7 +522,7 @@ public class HomeXMLHandler extends DefaultHandler {
         if (attributesMap.get("name") == null) {
           throw new SAXException("Missing name attribute");
         }
-        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf(attributesMap.get("name")));
+        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf(attributesMap.get("name"))); // TODO
       } catch (IllegalArgumentException ex) {
         // Ignore malformed enum constant 
       }
@@ -746,6 +746,9 @@ public class HomeXMLHandler extends DefaultHandler {
       home.setProperty(property.getKey(), property.getValue());
     }
     if (this.furnitureVisibleProperties.size() > 0) {
+      if (!this.furnitureVisibleProperties.contains("LEVEL")) {
+        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf("LEVEL"));
+      }
       this.home.setFurnitureVisibleProperties(this.furnitureVisibleProperties);
     }
     this.home.setBackgroundImage(this.homeBackgroundImage);

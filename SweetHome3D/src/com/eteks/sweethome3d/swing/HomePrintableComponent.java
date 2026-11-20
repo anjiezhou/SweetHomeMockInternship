@@ -341,7 +341,8 @@ public class HomePrintableComponent extends JComponent implements Printable {
             clipBounds.width, (int)pageFormat.getImageableHeight());
       }
     }
-    
+
+    // TODO
     View furnitureView = this.controller.getFurnitureController().getView();
     if (furnitureView != null 
         && (homePrint == null || homePrint.isFurniturePrinted())) {
@@ -351,7 +352,7 @@ public class HomePrintableComponent extends JComponent implements Printable {
           && (homePrint == null
               || homePrint.isPlanPrinted()
               || homePrint.isView3DPrinted())) {
-        // TODO: update level
+        // TODO
         final Level selectedLevel = home.getSelectedLevel();
         furnitureTable = (FurnitureTable)furnitureView;
         furnitureFilter = furnitureTable.getFurnitureFilter();
@@ -366,7 +367,8 @@ public class HomePrintableComponent extends JComponent implements Printable {
       } else {
         furnitureFilter = null;
       }
-      // Try to print next furniture view page      
+      // Try to print next furniture view page
+      // TODO
       pageExists = ((Printable)furnitureView).print(g2D, pageFormat, page);
       if (furnitureTable != null) {
         // Restore previous filter

@@ -1215,6 +1215,7 @@ public class Home implements Serializable, Cloneable {
     for (HomePieceOfFurniture piece : getFurniture()) {
       if (piece.isVisible()
           && (piece.getLevel() == null
+              // TODO: investigate
               || piece.getLevel().isViewable())) {
         homeItems.add(piece);
       }
@@ -1409,7 +1410,7 @@ public class Home implements Serializable, Cloneable {
     if (this.furnitureVisibleProperties == null) {
       return Collections.emptyList();
     } else {
-      return Collections.unmodifiableList(this.furnitureVisibleProperties);
+      return Collections.unmodifiableList(this.furnitureVisibleProperties); // TODO
     }
   }
   
@@ -1422,7 +1423,7 @@ public class Home implements Serializable, Cloneable {
     if (furnitureVisibleProperties != this.furnitureVisibleProperties
         && (furnitureVisibleProperties == null || !furnitureVisibleProperties.equals(this.furnitureVisibleProperties))) {
       List<HomePieceOfFurniture.SortableProperty> oldFurnitureVisibleProperties = this.furnitureVisibleProperties;
-      this.furnitureVisibleProperties = new ArrayList<HomePieceOfFurniture.SortableProperty>(furnitureVisibleProperties);
+      this.furnitureVisibleProperties = new ArrayList<HomePieceOfFurniture.SortableProperty>(furnitureVisibleProperties); // TODO
       this.propertyChangeSupport.firePropertyChange(
           Property.FURNITURE_VISIBLE_PROPERTIES.name(), 
           Collections.unmodifiableList(oldFurnitureVisibleProperties), 

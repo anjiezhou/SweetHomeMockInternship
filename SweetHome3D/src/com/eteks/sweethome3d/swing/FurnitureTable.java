@@ -773,7 +773,7 @@ public class FurnitureTable extends JTable implements View, Printable {
             return rendererComponent;
           }
         };
-      // Change printable column cell renderer 
+      // Change printable column cell renderer
       printableColumn.setCellRenderer(printableCellRenderer);
       // Change printable column header renderer
       printableColumn.setHeaderRenderer(printableHeaderRenderer);
