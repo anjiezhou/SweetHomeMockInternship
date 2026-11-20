@@ -6020,6 +6020,10 @@ public class PlanController extends FurnitureController implements Controller {
       return this.height;
     }
 
+//    public float getVolume() {
+//      return getWidth() * getDepth() * getHeight();
+//    }
+
     public boolean isDoorOrWindowBoundToWall() {
       return this.doorOrWindowBoundToWall;
     }

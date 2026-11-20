@@ -92,6 +92,7 @@ public class HomeFurnitureController implements Controller {
   private Float              proportionalDepth;
   private Float              height;
   private Float              proportionalHeight;
+//  private Float              volume;
   private boolean            proportional;
   private Integer            color;
   private FurniturePaint     paint;
@@ -1251,7 +1252,7 @@ public class HomeFurnitureController implements Controller {
     private final Float                       width;
     private final Float                       depth;
     private final Float                       height;
-    private final Float                       volume;
+//    private final Float                       volume;
     private final FurniturePaint              paint;
     private final Integer                     color;
     private final HomeTexture                 texture;
@@ -1293,7 +1294,7 @@ public class HomeFurnitureController implements Controller {
       this.width = width;
       this.depth = depth;
       this.height = height;
-      this.volume = width * depth * height;
+//      this.volume = width * depth * height;
       this.paint = paint;
       this.color = color;
       this.texture = texture;
@@ -1453,7 +1454,7 @@ public class HomeFurnitureController implements Controller {
     private final float                width;
     private final float                depth;
     private final float                height;
-    private final float                volume;
+//    private final float                volume;
     private final Integer              color;
     private final HomeTexture          texture;
     private final HomeMaterial []      modelMaterials;
@@ -1475,7 +1476,7 @@ public class HomeFurnitureController implements Controller {
       this.width = piece.getWidth();
       this.depth = piece.getDepth();
       this.height = piece.getHeight();
-      this.volume = piece.getWidth() * piece.getDepth() * piece.getHeight();
+//      this.volume = piece.getWidth() * piece.getDepth() * piece.getHeight();
       this.color = piece.getColor();
       this.texture = piece.getTexture();
       this.modelMaterials = piece.getModelMaterials();
