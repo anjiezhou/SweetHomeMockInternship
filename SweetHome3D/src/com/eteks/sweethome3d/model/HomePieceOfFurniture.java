@@ -292,7 +292,7 @@ public class HomePieceOfFurniture extends HomeObject implements PieceOfFurniture
     this.width = piece.getWidth();
     this.depth = piece.getDepth();
     this.height = piece.getHeight();
-    this.volume = piece.getDepth() * piece.getHeight() * piece.getWidth();
+    this.volume = piece.getVolume();
     this.elevation = piece.getElevation();
     this.dropOnTopElevation = piece.getDropOnTopElevation();
     this.movable = piece.isMovable();

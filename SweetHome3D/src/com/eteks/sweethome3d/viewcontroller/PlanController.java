@@ -6019,7 +6019,7 @@ public class PlanController extends FurnitureController implements Controller {
     public float getHeight() {
       return this.height;
     }
-    
+
     public boolean isDoorOrWindowBoundToWall() {
       return this.doorOrWindowBoundToWall;
     }
