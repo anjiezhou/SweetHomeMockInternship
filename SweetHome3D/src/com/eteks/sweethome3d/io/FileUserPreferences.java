@@ -117,6 +117,7 @@ public class FileUserPreferences extends UserPreferences {
   private static final String FURNITURE_WIDTH                           = "furnitureWidth#";
   private static final String FURNITURE_DEPTH                           = "furnitureDepth#";
   private static final String FURNITURE_HEIGHT                          = "furnitureHeight#";
+//  private static final String FURNITURE_VOLUME                          = "furnitureVolume#";
   private static final String FURNITURE_MOVABLE                         = "furnitureMovable#";
   private static final String FURNITURE_DOOR_OR_WINDOW                  = "furnitureDoorOrWindow#";
   private static final String FURNITURE_ELEVATION                       = "furnitureElevation#";
@@ -693,6 +694,7 @@ public class FileUserPreferences extends UserPreferences {
     float width = preferences.getFloat(FURNITURE_WIDTH + index, 0.1f);
     float depth = preferences.getFloat(FURNITURE_DEPTH + index, 0.1f);
     float height = preferences.getFloat(FURNITURE_HEIGHT + index, 0.1f);
+//    float volume = preferences.getFloat(FURNITURE_VOLUME + index, 0.1f);
     boolean movable = preferences.getBoolean(FURNITURE_MOVABLE + index, false);
     boolean doorOrWindow = preferences.getBoolean(FURNITURE_DOOR_OR_WINDOW + index, false);
     float elevation = preferences.getFloat(FURNITURE_ELEVATION + index, 0);

@@ -49,7 +49,7 @@ import com.eteks.sweethome3d.model.UserPreferences;
  */
 public class ImportedFurnitureWizardController extends WizardController 
                                                implements Controller {
-  public enum Property {STEP, NAME, MODEL, WIDTH, DEPTH, HEIGHT, ELEVATION, MOVABLE, 
+  public enum Property {STEP, NAME, MODEL, WIDTH, DEPTH, HEIGHT, VOLUME, ELEVATION, MOVABLE,
       DOOR_OR_WINDOW, COLOR, CATEGORY, BACK_FACE_SHOWN, MODEL_ROTATION, STAIRCASE_CUT_OUT_SHAPE,
       ICON_YAW, PROPORTIONAL}
 
@@ -79,6 +79,7 @@ public class ImportedFurnitureWizardController extends WizardController
   private float                            proportionalDepth;
   private float                            height;
   private float                            proportionalHeight;
+//  private float                            volume;
   private float                            elevation;
   private boolean                          movable;
   private boolean                          doorOrWindow;
@@ -543,6 +544,13 @@ public class ImportedFurnitureWizardController extends WizardController
       this.height = adjustedHeight;
       this.propertyChangeSupport.firePropertyChange(Property.HEIGHT.name(), oldHeight, adjustedHeight);
     }
+  }
+
+  /**
+   * Returns the volume.
+   */
+  public float getVolume() {
+    return getDepth() * getHeight() * getWidth();
   }
 
   /**
