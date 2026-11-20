@@ -522,7 +522,7 @@ public class HomeXMLHandler extends DefaultHandler {
         if (attributesMap.get("name") == null) {
           throw new SAXException("Missing name attribute");
         }
-        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf(attributesMap.get("name"))); // TODO
+        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf(attributesMap.get("name")));
       } catch (IllegalArgumentException ex) {
         // Ignore malformed enum constant 
       }

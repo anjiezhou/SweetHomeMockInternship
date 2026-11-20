@@ -1410,7 +1410,7 @@ public class Home implements Serializable, Cloneable {
     if (this.furnitureVisibleProperties == null) {
       return Collections.emptyList();
     } else {
-      return Collections.unmodifiableList(this.furnitureVisibleProperties); // TODO
+      return Collections.unmodifiableList(this.furnitureVisibleProperties);
     }
   }
   
@@ -1423,7 +1423,7 @@ public class Home implements Serializable, Cloneable {
     if (furnitureVisibleProperties != this.furnitureVisibleProperties
         && (furnitureVisibleProperties == null || !furnitureVisibleProperties.equals(this.furnitureVisibleProperties))) {
       List<HomePieceOfFurniture.SortableProperty> oldFurnitureVisibleProperties = this.furnitureVisibleProperties;
-      this.furnitureVisibleProperties = new ArrayList<HomePieceOfFurniture.SortableProperty>(furnitureVisibleProperties); // TODO
+      this.furnitureVisibleProperties = new ArrayList<HomePieceOfFurniture.SortableProperty>(furnitureVisibleProperties);
       this.propertyChangeSupport.firePropertyChange(
           Property.FURNITURE_VISIBLE_PROPERTIES.name(), 
           Collections.unmodifiableList(oldFurnitureVisibleProperties), 
