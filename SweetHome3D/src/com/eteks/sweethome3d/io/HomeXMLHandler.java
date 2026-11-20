@@ -746,6 +746,9 @@ public class HomeXMLHandler extends DefaultHandler {
       home.setProperty(property.getKey(), property.getValue());
     }
     if (this.furnitureVisibleProperties.size() > 0) {
+      if (!this.furnitureVisibleProperties.contains("LEVEL")) {
+        this.furnitureVisibleProperties.add(HomePieceOfFurniture.SortableProperty.valueOf("LEVEL"));
+      }
       this.home.setFurnitureVisibleProperties(this.furnitureVisibleProperties);
     }
     this.home.setBackgroundImage(this.homeBackgroundImage);
