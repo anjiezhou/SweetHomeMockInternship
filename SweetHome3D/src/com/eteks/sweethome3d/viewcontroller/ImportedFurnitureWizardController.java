@@ -51,7 +51,7 @@ public class ImportedFurnitureWizardController extends WizardController
                                                implements Controller {
   public enum Property {STEP, NAME, MODEL, WIDTH, DEPTH, HEIGHT, VOLUME, ELEVATION, MOVABLE,
       DOOR_OR_WINDOW, COLOR, CATEGORY, BACK_FACE_SHOWN, MODEL_ROTATION, STAIRCASE_CUT_OUT_SHAPE,
-      ICON_YAW, PROPORTIONAL}
+      ICON_YAW, PROPORTIONAL, LEVEL}
 
   public enum Step {MODEL, ROTATION, ATTRIBUTES, ICON};
   

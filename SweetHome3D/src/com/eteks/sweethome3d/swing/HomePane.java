@@ -365,9 +365,7 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.ELEVATION);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_ANGLE, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.ANGLE);
-    createAction(ActionType.SORT_HOME_FURNITURE_BY_LEVEL, preferences, 
-        furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.LEVEL);
-    createAction(ActionType.SORT_HOME_FURNITURE_BY_COLOR, preferences, 
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_COLOR, preferences,
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.COLOR);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_TEXTURE, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.TEXTURE);
@@ -377,7 +375,9 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.DOOR_OR_WINDOW);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_VISIBILITY, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.VISIBLE);
-    createAction(ActionType.SORT_HOME_FURNITURE_BY_PRICE, preferences, 
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_LEVEL, preferences,
+        furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.LEVEL);
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_PRICE, preferences,
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.PRICE);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_VALUE_ADDED_TAX_PERCENTAGE, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.VALUE_ADDED_TAX_PERCENTAGE);
@@ -407,9 +407,7 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.ELEVATION);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_ANGLE, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.ANGLE);
-    createAction(ActionType.DISPLAY_HOME_FURNITURE_LEVEL, preferences, 
-        furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.LEVEL);
-    createAction(ActionType.DISPLAY_HOME_FURNITURE_COLOR, preferences, 
+    createAction(ActionType.DISPLAY_HOME_FURNITURE_COLOR, preferences,
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.COLOR);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_TEXTURE, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.TEXTURE);
@@ -419,7 +417,9 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.DOOR_OR_WINDOW);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_VISIBLE, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.VISIBLE);
-    createAction(ActionType.DISPLAY_HOME_FURNITURE_PRICE, preferences, 
+    createAction(ActionType.DISPLAY_HOME_FURNITURE_LEVEL, preferences,
+        furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.LEVEL);
+    createAction(ActionType.DISPLAY_HOME_FURNITURE_PRICE, preferences,
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.PRICE);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_VALUE_ADDED_TAX_PERCENTAGE, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.VALUE_ADDED_TAX_PERCENTAGE);
@@ -1338,9 +1338,7 @@ public class HomePane extends JRootPane implements HomeView {
         sortActions, HomePieceOfFurniture.SortableProperty.ELEVATION);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_ANGLE, 
         sortActions, HomePieceOfFurniture.SortableProperty.ANGLE);
-    addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_LEVEL, 
-        sortActions, HomePieceOfFurniture.SortableProperty.LEVEL);
-    addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_COLOR, 
+    addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_COLOR,
         sortActions, HomePieceOfFurniture.SortableProperty.COLOR);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_TEXTURE, 
         sortActions, HomePieceOfFurniture.SortableProperty.TEXTURE);
@@ -1350,6 +1348,8 @@ public class HomePane extends JRootPane implements HomeView {
         sortActions, HomePieceOfFurniture.SortableProperty.DOOR_OR_WINDOW);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_VISIBILITY, 
         sortActions, HomePieceOfFurniture.SortableProperty.VISIBLE);
+    addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_LEVEL,
+        sortActions, HomePieceOfFurniture.SortableProperty.LEVEL);
     // Use prices if currency isn't null
     if (preferences.getCurrency() != null) {
       addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_PRICE, 
@@ -1443,9 +1443,7 @@ public class HomePane extends JRootPane implements HomeView {
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.ELEVATION);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_ANGLE, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.ANGLE);
-    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_LEVEL, 
-        displayPropertyActions, HomePieceOfFurniture.SortableProperty.LEVEL);
-    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_COLOR, 
+    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_COLOR,
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.COLOR);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_TEXTURE, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.TEXTURE);
@@ -1455,6 +1453,8 @@ public class HomePane extends JRootPane implements HomeView {
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.DOOR_OR_WINDOW);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_VISIBLE, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.VISIBLE);
+    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_LEVEL,
+        displayPropertyActions, HomePieceOfFurniture.SortableProperty.LEVEL);
     // Use prices if currency isn't null
     if (preferences.getCurrency() != null) {
       addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_PRICE, 

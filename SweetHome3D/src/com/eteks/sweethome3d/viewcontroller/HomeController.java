@@ -261,12 +261,12 @@ public class HomeController implements Controller {
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_Y, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_ELEVATION, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_ANGLE, true);
-    homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_LEVEL, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_COLOR, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_TEXTURE, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_MOVABILITY, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_TYPE, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_VISIBILITY, true);
+    homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_LEVEL, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_PRICE, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_VALUE_ADDED_TAX_PERCENTAGE, true);
     homeView.setEnabled(HomeView.ActionType.SORT_HOME_FURNITURE_BY_VALUE_ADDED_TAX, true);
@@ -283,12 +283,12 @@ public class HomeController implements Controller {
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_Y, true); 
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_ELEVATION, true); 
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_ANGLE, true); 
-    homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_LEVEL, true); 
-    homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_COLOR, true); 
+    homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_COLOR, true);
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_TEXTURE, true); 
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_MOVABLE, true); 
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_DOOR_OR_WINDOW, true); 
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_VISIBLE, true);
+    homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_LEVEL, true);
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_PRICE, true);
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_VALUE_ADDED_TAX_PERCENTAGE, true);
     homeView.setEnabled(HomeView.ActionType.DISPLAY_HOME_FURNITURE_VALUE_ADDED_TAX, true);
